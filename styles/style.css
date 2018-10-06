@@ -5,12 +5,17 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    padding-left: 15px;
+}
+
 .container {
     margin: 10px auto;
     width: 1024px;
 }
 
 section.vc {
+    margin-bottom: 25px;
     padding: 0;
     height: 400px;
     background-color: black;
@@ -47,4 +52,17 @@ section.vc {
     width: 412px;
     height: 100%;
     background-color: gray;
+}
+
+.about {
+    width: 382px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.example {
+    float: right;
+    width: 612px;
+    display: inline-block;
+    border: 1px solid black;
 }
