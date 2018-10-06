@@ -7,6 +7,7 @@ h1 {
 
 h2 {
     padding-left: 15px;
+    font-size: 2em;
 }
 
 .container {
@@ -18,7 +19,7 @@ section.vc {
     margin-bottom: 25px;
     padding: 0;
     height: 400px;
-    background-color: black;
+    background-color: lightgray;
 }
 
 .photo {
@@ -38,7 +39,7 @@ section.vc {
 
 .transition {
     vertical-align:middle;
-    margin-left: -4px;
+    margin-left: -3px;
     display: inline-block;
     border-style: solid;
     border-width: 200px 100px;
@@ -46,23 +47,42 @@ section.vc {
 }
 
 .contacts {
+    float: right;
     vertical-align:middle;
-    margin-left: -4px;
+    margin-left: -5px;
     display: inline-block;
     width: 412px;
     height: 100%;
     background-color: gray;
 }
 
-.about {
-    width: 382px;
+.about-me {
+    width: 400px;
     display: inline-block;
-    border: 1px solid black;
+    background-color: lightgray;
 }
 
 .example {
     float: right;
     width: 612px;
     display: inline-block;
-    border: 1px solid black;
+    background-color: rgb(235, 195, 131);
+}
+
+article {
+    padding: 5px 15px;
+    text-align: justify;
+}
+
+header {
+    font-size: 1.5em;
+}
+
+article p {
+    text-indent: 20px;
+}
+
+pre {
+    margin-top: -20px;
+    margin-left: -175px;
 }
