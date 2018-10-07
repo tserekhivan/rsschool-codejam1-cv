@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles/style.css">
-        <title>Resume: Ivan Tserekh</title>
-    </head>
-    <body>
-        <div class="container">
-            <section class="vc">
-                <div class="photo">
-                    <img src="images/photo.jpg" alt="Tserekh Ivan Photo">
-                </div>
-                <div class="transition"></div>
-                <div class="contacts">
-                    <h1>Ivan Tserekh</h1>
-                    <p>Minsk, Republic of Belarus</p>
-                    <p>+375(29)6613225</p>
-                    <p>tserekh.ivan@gmail.com</p>
-                    <p>skype: shaggy.by</p>
-                </div>
-            </section>
-            <section class="about-me">
-                <h2>About Me</h2>
-                <article>
-                    <header>Summary</header>
-                    <p>I believe that I can be an asset to your company because I have shown that I have an understanding of JavaScript.
-                         I have a passion for programming which I have demonstrated through years of self-study and my initiative 
-                         in finding freelance clients as well as creating my own side-projects. I also have a teachable attitude 
-                         and a desire to learn (as evidenced by my continued self-study).</p>
-                </article>
-                <article>
-                    <header>Skills</header>
-                    <p>JavaScript (ES6), CSS3, HTML5, Git, C/C++, SQL</p>
-                </article>
-                <article>
-                    <header>Education</header>
-                    <p>BSUIR, Information systems and technologies (in economics)</p>
-                </article>
-                <article>
-                    <header>English</header>
-                    <p>A1 (Elementary). I am engaged in raising the level now.</p>
-                </article>
-
-            </section>
-            <section class="example">
-                <h2>Example Code</h2>
-                <pre><code>
-                        module.exports = function solveSudoku(matrix) {
-                            if (solve(matrix)) return matrix;
-                            else return 0;
-                          }
-                          
-                          function solve(matrix) {
-                            for (let i = 0; i < 9; i++) {
-                              for (let j = 0; j < 9; j++) {
-                                if (matrix[i][j] != 0) {
-                                  continue;
-                                }
-                                for (let key = 1; key <= 9; key++) {
-                                  if (findPossibleValue(matrix, i, j, key) == true) {
-                                    matrix[i][j] = key;
-                                    if (solve(matrix)) {
-                                      return true;
-                                    }
-                                    matrix[i][j] = 0;
-                                  }
-                                }
-                                return false;
-                              }
-                            }
-                            return true;
-                          }
-                          
-                          function findPossibleValue(matrix, rowIndex, columnIndex, key)
-                          {
-                            if (!findRowValue(matrix, rowIndex, columnIndex, key)) return false;
-                            if (!findColumnValue(matrix, rowIndex, columnIndex, key)) return false;
-                            if (!findBlockValue(matrix, rowIndex, columnIndex, key)) return false;
-                            return true;
-                          }
-                          
-                          function findRowValue(matrix, rowIndex, columnIndex, key) {
-                            for (let j = 0; j < 9; j++) {
-                              if (j != columnIndex && matrix[rowIndex][j] == key) {
-                                return false;
-                              }
-                            }
-                            return true;
-                          }
-                          
-                          function findColumnValue(matrix, rowIndex, columnIndex, key) {
-                            for (let i = 0; i < 9; i++) {
-                              if (i != rowIndex && matrix[i][columnIndex] == key) {
-                                return false;
-                              }
-                            }
-                            return true;
-                          }
-                          
-                          function findBlockValue(matrix, rowIndex, columnIndex, key) {
-                            let startRow = Math.floor((rowIndex / 3)) * 3;
-                            let startColumn = Math.floor((columnIndex / 3)) * 3;
-                            for (let i = 0; i < 3; i++) {
-                              for (let j = 0; j < 3; j++) {
-                                if (i != rowIndex && j != columnIndex 
-                                && matrix[startRow + i][startColumn + j] == key) {
-                                  return false;
-                                }
-                              }
-                            }
-                            return true;
-                          }
-                </code></pre>
-            </section>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Resume: Ivan Tserekh</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="vc">
+        <div class="photo">
+          <img src="images/photo.jpg" alt="Tserekh Ivan Photo">
         </div>
-    </body>
+        <div class="transition"></div>
+        <div class="contacts">
+          <h1>Ivan Tserekh</h1>
+          <p>Minsk, Republic of Belarus</p>
+          <p>+375(29)6613225</p>
+          <p>tserekh.ivan@gmail.com</p>
+          <p>skype: shaggy.by</p>
+        </div>
+      </section>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <article>
+          <header>Summary</header>
+          <p>I believe that I can be an asset to your company because I have shown that I have an understanding of JavaScript.
+              I have a passion for programming which I have demonstrated through years of self-study and my initiative 
+              in finding freelance clients as well as creating my own side-projects. I also have a teachable attitude 
+              and a desire to learn (as evidenced by my continued self-study).</p>
+        </article>
+        <article>
+          <header>Skills</header>
+          <p>JavaScript (ES6), CSS3, HTML5, Git, C/C++, SQL</p>
+        </article>
+        <article>
+          <header>Education</header>
+            <p>BSUIR, Information systems and technologies (in economics)</p>
+        </article>
+        <article>
+          <header>English</header>
+          <p>A1 (Elementary). I am engaged in raising the level now.</p>
+        </article>
+      </section>
+      <section class="example">
+        <h2>Example Code</h2>
+        <pre><code>
+            module.exports = function solveSudoku(matrix) {
+              if (solve(matrix)) return matrix;
+              else return 0;
+            }
+            
+            function solve(matrix) {
+              for (let i = 0; i < 9; i++) {
+                for (let j = 0; j < 9; j++) {
+                  if (matrix[i][j] != 0) {
+                    continue;
+                  }
+                  for (let key = 1; key <= 9; key++) {
+                    if (findPossibleValue(matrix, i, j, key) == true) {
+                      matrix[i][j] = key;
+                      if (solve(matrix)) {
+                        return true;
+                      }
+                      matrix[i][j] = 0;
+                    }
+                  }
+                  return false;
+                }
+              }
+              return true;
+            }
+            
+            function findPossibleValue(matrix, rowIndex, columnIndex, key)
+            {
+              if (!findRowValue(matrix, rowIndex, columnIndex, key)) return false;
+              if (!findColumnValue(matrix, rowIndex, columnIndex, key)) return false;
+              if (!findBlockValue(matrix, rowIndex, columnIndex, key)) return false;
+              return true;
+            }
+            
+            function findRowValue(matrix, rowIndex, columnIndex, key) {
+              for (let j = 0; j < 9; j++) {
+                if (j != columnIndex && matrix[rowIndex][j] == key) {
+                  return false;
+                }
+              }
+              return true;
+            }
+            
+            function findColumnValue(matrix, rowIndex, columnIndex, key) {
+              for (let i = 0; i < 9; i++) {
+                if (i != rowIndex && matrix[i][columnIndex] == key) {
+                  return false;
+                }
+              }
+              return true;
+            }
+            
+            function findBlockValue(matrix, rowIndex, columnIndex, key) {
+              let startRow = Math.floor((rowIndex / 3)) * 3;
+              let startColumn = Math.floor((columnIndex / 3)) * 3;
+              for (let i = 0; i < 3; i++) {
+                for (let j = 0; j < 3; j++) {
+                  if (i != rowIndex && j != columnIndex 
+                  && matrix[startRow + i][startColumn + j] == key) {
+                    return false;
+                  }
+                }
+              }
+              return true;
+            }
+        </code></pre>
+      </section>
+    </div>
+  </body>
 </html>

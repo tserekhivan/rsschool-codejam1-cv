@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Krub";
+    font-family: "Krub", "Arial", sans-serif;
 }
 
 h1 {
@@ -21,61 +21,63 @@ h2 {
 }
 
 .container {
-    margin: 10px auto;
     width: 1024px;
+    margin: 10px auto;
+    
 }
 
 section.vc {
+    height: 400px;
     margin-bottom: 25px;
     padding: 0;
-    height: 400px;
     background-color: lightgray;
 }
 
 .photo {
-    vertical-align:middle;
-    text-align: center;
-    margin: 0;
     display: inline-block;
+    vertical-align:middle;
     width: 412px;
     height: 100%;
+    margin: 0;
+    text-align: center;
     background-color: lightgray;
 }
 
 .photo img {
-    margin-top: 50px;
     height: 300px;
+    margin-top: 50px;
+    
 }
 
 .transition {
-    vertical-align:middle;
-    margin-left: -3px;
     display: inline-block;
+    margin-left: -3px;
+    vertical-align:middle;
     border-style: solid;
     border-width: 200px 100px;
     border-color: lightgray gray gray lightgray;
 }
 
 .contacts {
-    float: right;
-    vertical-align:middle;
-    margin-left: -5px;
     display: inline-block;
+    float: right;
     width: 412px;
     height: 100%;
+    margin-left: -5px;
+    vertical-align:middle;
     background-color: gray;
 }
 
 .about-me {
-    width: 400px;
     display: inline-block;
+    width: 400px;
     background-color: lightgray;
 }
 
 .example {
+    display: inline-block;
     float: right;
     width: 612px;
-    display: inline-block;
     background-color: rgb(235, 195, 131);
 }
 
@@ -95,5 +97,5 @@ article p {
 
 pre {
     margin-top: -20px;
-    margin-left: -175px;
+    margin-left: -75px;
 }
