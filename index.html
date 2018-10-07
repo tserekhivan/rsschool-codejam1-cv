@@ -114,12 +114,12 @@
             }
             
             function solve(matrix) {
-              for (let i = 0; i < 9; i++) {
-                for (let j = 0; j < 9; j++) {
+              for (let i = 0; i &lt; 9; i++) {
+                for (let j = 0; j &lt; 9; j++) {
                   if (matrix[i][j] != 0) {
                     continue;
                   }
-                  for (let key = 1; key <= 9; key++) {
+                  for (let key = 1; key &lt;= 9; key++) {
                     if (findPossibleValue(matrix, i, j, key) == true) {
                       matrix[i][j] = key;
                       if (solve(matrix)) {
@@ -143,7 +143,7 @@
             }
             
             function findRowValue(matrix, rowIndex, columnIndex, key) {
-              for (let j = 0; j < 9; j++) {
+              for (let j = 0; j &lt; 9; j++) {
                 if (j != columnIndex && matrix[rowIndex][j] == key) {
                   return false;
                 }
@@ -152,7 +152,7 @@
             }
             
             function findColumnValue(matrix, rowIndex, columnIndex, key) {
-              for (let i = 0; i < 9; i++) {
+              for (let i = 0; i &lt; 9; i++) {
                 if (i != rowIndex && matrix[i][columnIndex] == key) {
                   return false;
                 }
@@ -163,8 +163,8 @@
             function findBlockValue(matrix, rowIndex, columnIndex, key) {
               let startRow = Math.floor((rowIndex / 3)) * 3;
               let startColumn = Math.floor((columnIndex / 3)) * 3;
-              for (let i = 0; i < 3; i++) {
-                for (let j = 0; j < 3; j++) {
+              for (let i = 0; i &lt; 3; i++) {
+                for (let j = 0; j &lt; 3; j++) {
                   if (i != rowIndex && j != columnIndex 
                   && matrix[startRow + i][startColumn + j] == key) {
                     return false;
