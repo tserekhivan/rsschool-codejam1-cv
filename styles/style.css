@@ -44,7 +44,10 @@ section.vc {
 
 .photo img {
   height: 300px;
-  margin-top: 50px;  
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
 
 .transition {
@@ -107,7 +110,7 @@ header h3{
 
 .raiting p {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 10px;
 }
 
 article p {
