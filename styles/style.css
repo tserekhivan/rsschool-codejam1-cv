@@ -95,6 +95,21 @@ header h3{
   margin: 0px;
 }
 
+.raiting {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.raiting img{
+  display: inline-block;
+  height: 15px;
+}
+
+.raiting p {
+  display: inline-block;
+  margin-top: 9px;
+}
+
 article p {
   font-size: 1.1em;
   text-indent: 20px;
